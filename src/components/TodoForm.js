@@ -1,12 +1,12 @@
 import { Button, TextField } from "@material-ui/core";
 import React, { useState } from "react";
-import {v4 as uuid} from "uuid";
+import { v4 as uuid } from "uuid";
 
 function TodoForm({ addTodo }) {
   const [todo, setTodo] = useState({
     id: "",
     task: "",
-    completed: false
+    completed: false,
   });
 
   function handleTaskInputChange(e) {
@@ -33,7 +33,7 @@ function TodoForm({ addTodo }) {
         value={todo.task}
         onChange={handleTaskInputChange}
       />
-      <Button type="submit">Submit</Button>
+      <Button type="submit">Click to Submit</Button>
     </form>
   );
 }
